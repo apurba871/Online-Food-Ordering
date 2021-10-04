@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-image: url("../images/back3.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h1,
+        h4 {
+            text-align: center;
+            color: aliceblue;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            padding-left: 1em;
+        }
+
+        ul,
+        ol {
+            padding-left: 5em;
+        }
+
+        * {
+            /* text-align: center; */
+            font-family: 'Open Sans', sans-serif;
+            /* cursor: default; */
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            width: 90%;
+            margin: 0 auto;
+            justify-content: space-evenly;
+        }
+
+        .item {
+            color: rgb(240, 236, 230);
+            /* background-color: rgb(185, 222, 255); */
+            background: linear-gradient(to right, #44a08d, #156363);
+            /* width: 404px; */
+            border: 5px solid rgb(153, 0, 255);
+            /* height: 500px; */
+            /* box-shadow: 0px 0px 20px rgb(153, 0, 255); */
+
+            /* padding: 1em 2em; */
+            font-size: 1em;
+            transition: all 0.25s;
+        }
+
+        .item:hover {
+            /* box-shadow: 0 0.5em 1.5em -0.2em rgb(236, 198, 209); */
+            box-shadow: 0px 0px 20px rgb(153, 0, 255);
+            transform: translateY(-0.5em);
+        }
+
+        img {
+            height: 400px;
+            width: 400px;
+            border: 1px solid white;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Here is what we offer</h1>
+    <h4>Pictures of sizes 400x400 with links, border and background image</h4>
+    <div class="container">
+        <div class="item">
+            <a href="https://www.google.co.in/search?q=sandwich+with+boiled+egg" target="_blank"><img class="cover-img"
+                    src="../images/sand-egg.jpg"></a><br>
+            <h2>Sandwich with Boiled Egg</h2>
+            <h3>What you get:</h3>
+            <ol type="I">
+                <li>Bread x 2</li>
+                <li>Egg x 1</li>
+                <li>Juice</li>
+                <li>Fruits</li>
+            </ol>
+            <h3>Suitable for:</h3>
+            <ul>
+                <li>Breakfast</li>
+            </ul>
+        </div>
+        <div class="item">
+            <a href="https://www.google.co.in/search?q=biryani" target="_blank"><img class="cover-img"
+                    src="../images/biryani.jpg"></a><br>
+            <h2>Biryani</h2>
+            <h3>What you get:</h3>
+            <ol type="I">
+                <li>Mutton Biryani</li>
+                <li>Mutton Pieces x 2</li>
+                <li>Chicken Chap x 2</li>
+                <li>Aloo x 2</li>
+            </ol>
+            <h3>Suitable for:</h3>
+            <ul>
+                <li>Lunch</li>
+                <li>Dinner</li>
+            </ul>
+        </div>
+        <div class="item">
+            <a href="https://www.google.co.in/search?q=donuts" target="_blank"><img class="cover-img"
+                    src="../images/donuts.jpg"></a><br>
+            <h2>Delicious Donuts</h2>
+            <h3>What you get:</h3>
+            <ol type="I">
+                <li>Donuts x 3</li>
+                <li>Chocolate Syrup Sachet x 1</li>
+            </ol>
+            <h3>Suitable for:</h3>
+            <ul>
+                <li>Snacks</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+    body {
+        background-color: #caf0f8;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: 'Open Sans Condensed', sans-serif;
+        color: rebeccapurple;
+        margin: 0 auto;
+        font-size: 100px;
+        cursor: pointer;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 100px;
+    width: 100px; */
+    }
+
+    .container>img {
+        height: 700px;
+        width: 1000px;
+    }
+
+    .img-grp {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+
+    .img-grp img {
+        height: 100px;
+        width: 200px;
+        margin: 10px;
+    }
+
+    .imgs {
+        border-radius: 10px;
+        border: 5px solid rebeccapurple;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+</style>
+
+<body>
+    <h2>Cherish every moment with your Loved Ones</h2>
+    <div class="container">
+        <h1 id="left" onclick="left()">&lt;&lt;</h1>
+        <img class="imgs" id="a" src="../images/1.jpg" alt="">
+        <h1 id="right" onclick="right()">&gt;&gt;</h1>
+    </div>
+    <div class="img-grp">
+        <img class="imgs" id="b" src="../images/1.jpg" alt="" onmouseover=modify(id)>
+        <img class="imgs" id="c" src="../images/2.jpg" alt="" onmouseover=modify(id)>
+        <img class="imgs" id="d" src="../images/3.jpg" alt="" onmouseover=modify(id)>
+        <img class="imgs" id="e" src="../images/4.jpg" alt="" onmouseover=modify(id)>
+        <img class="imgs" id="f" src="../images/5.jpg" alt="" onmouseover=modify(id)>
+        <img class="imgs" id="g" src="../images/6.jpg" alt="" onmouseover=modify(id)>
+    </div>
+    <script src="../../scripts/slideshow.js"></script>
+</body>
+
+</html>

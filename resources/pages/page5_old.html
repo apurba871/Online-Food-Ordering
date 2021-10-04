@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Order</title>
+    <link rel="stylesheet" href="../../styles/app.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="form" class="form">
+            <h2>Register With Us</h2>
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username">
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            <div class="form-control">
+                <label for="gender">Gender</label>
+                <label for="male" class="special">Male</label>
+                <input type="radio" name="gender" value="Male" checked="checked" class="special">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="female" class="special">Female</label>
+                <input type="radio" name="gender" value="Female" class="special">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="other" class="special">Other</label>
+                <input type="radio" name="gender" value="Other" class="special">
+            </div>
+            <div class="form-control">
+                <label for="city">City</label>
+                <select name="city" id="city">
+                    <option value="Kolkata" selected="selected">Kolkata</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Chennai">Chennai</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="preferences">Preferences</label>
+                <input type="checkbox" id="newsletters" name="newsletters" value="newsletters">
+                <label class="mylabels" for="newsletters">Receive our weekly newsletters</label><br>
+                <input type="checkbox" id="surveys" name="surveys" value="surveys">
+                <label class="mylabels" for="surveys">Participate in our surveys</label><br>
+                <input type="checkbox" id="emails" name="emails" value="emails">
+                <label class="mylabels" for="emails">Get personalized emails</label>
+            </div>
+            <div class="form-control" id="comment-div">
+                <label for="comments">Comments</label>
+                <textarea rows="10" name="comments" id="comments" style="resize: none;"
+                    placeholder="Have some comments?"></textarea>
+            </div>
+        </form>
+        <div class="btn-group">
+            <button onclick="submitButton()">Submit</button>
+            <button onclick="resetButton()">Reset</button>
+        </div>
+    </div>
+    <script src="../../scripts/main.js"></script>
+</body>
+
+</html>
