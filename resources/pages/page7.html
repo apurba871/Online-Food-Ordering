@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/watermark.css" />
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+        body {
+            background: #005AA7;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #FFFDE4, #005AA7);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        .heading {
+            text-align: center;
+            /* display: block; */
+            margin-top: 40px;
+            font-size: 100px;
+            color:bisque;
+            /* background-image: url("../images/hot2.jpg"); */
+            /* text-shadow: 0px 0px 10px white; */
+            /* background-position: center; */
+            /* background-size: 270px;
+            background-repeat: repeat-x;
+            -webkit-background-clip: text;
+            animation: animate 5s linear infinite; */
+        }
+
+        @keyframes animate {
+            0% {
+                background-position: left 0px top 0px;
+            }
+
+            40% {
+                background-position: left 800px top 0px;
+            }
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 10vh;
+        }
+
+        .special {
+            font-size: 25px;
+            font-weight: bolder;
+
+            background: #00cccc;
+            color: #fff;
+            text-transform: uppercase;
+            /* font-size: 12px; */
+        }
+
+        * {
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            cursor: default;
+        }
+
+        table {
+            /* font-family: 'Arial'; */
+            margin: 25px auto;
+            border-collapse: collapse;
+            border: 1px solid #eee;
+            border-bottom: 5px solid #00cccc;
+            box-shadow: 0px 0px 20px rgb(255, 255, 255);
+        }
+
+        td {
+            /* color: #999; */
+            background-color: #fff;
+            border: 1px solid #eee;
+            padding: 12px 35px;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="heading">Pricing Chart</h2>
+    <div class="container"></div>
+    <table align="center" border="1" cellpadding="15" cellspacing="10">
+        <th colspan="6" style="background-color: skyblue;">Item Details</th>
+        <tr>
+            <td rowspan="7" style="background-color:rgb(177, 168, 255); width: 100px;">We ensure contactless delivery from our chef's kitchen to your doorstep
+        </tr>
+        <td class="special">Item</td>
+        <td class="special">Order between</td>
+        <td class="special">Waiting Time</td>
+        <td class="special">GST</td>
+        <td class="special">Price</td>
+        </tr>
+
+        <tr>
+            <td>Sandwich w/ Boiled Egg</td>
+            <td>7:00 AM - 11:00 AM</td>
+            <td>5 minutes</td>
+            <td>18%</td>
+            <td>Rs 60</td>
+        </tr>
+        <tr>
+            <td>Biryani</td>
+            <td>12:30 PM - 11:30 PM</td>
+            <td>25 minutes</td>
+            <td>18%</td>
+            <td>Rs 270</td>
+        </tr>
+        <tr>
+            <td>Delicious Donuts</td>
+            <td>11:00 AM - 4:00 PM</td>
+            <td>2 minutes</td>
+            <td>15%</td>
+            <td>Rs 55</td>
+        </tr>
+        <!-- <tr>
+            <td>Swastha Kendra, Khardah</td>
+            <td>12:00 AM - 6:00 PM</td>
+            <td>Covishield</td>
+            <td>1</td>
+            <td>Rs 780</td>
+        </tr>
+        <tr>
+            <td>ILS Hospital, Dum Dum</td>
+            <td>10:00 AM - 4:30 PM</td>
+            <td>Covaxin</td>
+            <td>2</td>
+            <td>Rs 550</td>
+        </tr> -->
+    </table>
+    </div>
+</body>
+
+</html>

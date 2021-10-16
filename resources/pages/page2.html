@@ -1,145 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style type="text/css">
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-        body {
-            /* background-image: url("../images/home.jpg"); */
-            /* background-color: skyblue; */
-            background-image: url("../images/back2.jpg");
-            height: 100%;
-            /* background-position: center; */
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+      body {
+        /* background-image: url("../images/home.jpg"); */
+        /* background-color: skyblue; */
+        background-image: url("../images/back2.jpg");
+        height: 100%;
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
 
-        /* .container {
+      /* .container {
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 30vh;
         } */
 
-        h1 {
-            font-size: 100px;
-            color: rgba(255, 255, 255, .2);
-            font-family: 'Montserrat', sans-serif;
-            color: antiquewhite;
-            font-weight: bolder;
-            /* text-decoration: underline; */
-            text-align: center;
+      h1 {
+        font-size: 100px;
+        color: rgba(255, 255, 255, 0.2);
+        font-family: "Montserrat", sans-serif;
+        color: antiquewhite;
+        font-weight: bolder;
+        /* text-decoration: underline; */
+        text-align: center;
+      }
+
+      h1:hover {
+        cursor: default;
+      }
+
+      h2,
+      h3 {
+        color: brown;
+        text-align: center;
+        cursor: default;
+      }
+
+      p {
+        /* width: 1000px; */
+        text-align: justify;
+        margin-left: 250px;
+        margin-right: 250px;
+        cursor: default;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        /* font-family: 'Open Sans', sans-serif; */
+        font-size: larger;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      a:hover {
+        color: aliceblue;
+      }
+
+      .btn-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .btn {
+        /* padding: 5px 10px; */
+        padding: 1em 2em;
+        margin: 0 auto;
+        border-radius: 5px;
+        border: 5px solid rgb(132, 0, 255);
+        font-size: 1em;
+        margin-top: 100px;
+        transition: all 0.25s;
+      }
+
+      .btn:hover {
+        /* border-color: #f1ff5c; */
+        cursor: pointer;
+        background-color: rgb(132, 0, 255);
+        box-shadow: 0 0.5em 1.5em -0.2em rgb(255, 0, 72);
+        transform: translateY(-0.25em);
+      }
+
+      /* ---STUFFS FOR ANIMATION--- */
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      div.slide-up {
+        height: 500px;
+        /* un-comment below line to turn off animation */
+        /* overflow: hidden; */
+      }
+
+      div.slide-up h1,
+      h2,
+      h3 {
+        animation: 5s slide-up;
+        margin-top: 0%;
+      }
+
+      @keyframes slide-up {
+        from {
+          margin-top: 100%;
+          height: 300%;
         }
 
-        h1:hover {
-            cursor: default;
+        to {
+          margin-top: 0%;
+          height: 100%;
         }
+      }
 
-        h2,
-        h3 {
-            color: brown;
-            text-align: center;
-            cursor: default;
-        }
-
-        p {
-            /* width: 1000px; */
-            text-align: justify;
-            margin-left: 250px;
-            margin-right: 250px;
-            cursor: default;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            /* font-family: 'Open Sans', sans-serif; */
-            font-size: larger;
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        a:hover {
-            color: aliceblue;
-        }
-
-        .btn-group {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .btn {
-            /* padding: 5px 10px; */
-            padding: 1em 2em;
-            margin: 0 auto;
-            border-radius: 5px;
-            border: 5px solid rgb(132, 0, 255);
-            font-size: 1em;
-            margin-top: 100px;
-            transition: all 0.25s;
-        }
-
-        .btn:hover {
-            /* border-color: #f1ff5c; */
-            cursor: pointer;
-            background-color: rgb(132, 0, 255);
-            box-shadow: 0 0.5em 1.5em -0.2em rgb(255, 0, 72);
-            transform: translateY(-0.25em);
-        }
-
-        /* ---STUFFS FOR ANIMATION--- */
-        ::-webkit-scrollbar {
-            display: none;
-        }
-
-        div.slide-up {
-            height: 500px;
-            /* un-comment below line to turn off animation */
-            /* overflow: hidden; */
-        }
-
-        div.slide-up h1,
-        h2,
-        h3 {
-            animation: 5s slide-up;
-            margin-top: 0%;
-        }
-
-        @keyframes slide-up {
-            from {
-                margin-top: 100%;
-                height: 300%;
-            }
-
-            to {
-                margin-top: 0%;
-                height: 100%;
-            }
-        }
-
-        .spacing {
-            height: 100px;
-        }
+      .spacing {
+        height: 100px;
+      }
     </style>
-</head>
+    <link rel="stylesheet" href="../../styles/watermark.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="spacing"></div>
-        <div class="slide-up">
-            <h1>Online Food Ordering</h1>
-        </div>
+      <div class="spacing"></div>
+      <div class="slide-up">
+        <h1>Online Food Ordering</h1>
+      </div>
     </div>
     <div class="btn-group">
-        <button class="btn"><a href="mailto:food@order.com?Subject=Order">Email Us Your Order</a></button>
+      <button class="btn">
+        <a href="mailto:food@order.com?Subject=Order">Email Us Your Order</a>
+      </button>
     </div>
-</body>
-
+  </body>
 </html>
